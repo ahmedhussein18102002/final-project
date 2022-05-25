@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="OIP.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+
+    <title>Fooods</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+          <img class="icon" src="icon.jpg">
+          <h3> Fooods</h3>
+        </div>
+        <div class="bars-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="chef.html" class="nav-link">Chef</a>
+          </li>
+          <li class="nav-item">
+            <a href="food.html" class="nav-link">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a href="restaurant.html" class="nav-link">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a href="form.html" class="nav-link" >Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <form target="_self" action="index.html" method="post" class="Form" id="form">
+            <header class="h-form">
+                SIGN UP
+            </header>
+
+            <fieldset>
+                <legend>
+                    personal information
+                </legend>
+
+
+                <input type="text" name="fname" id="fname" class="inpt" required
+                    placeholder="enter your first name"><br>
+                <input type="text" name="lname" id="lname" class="inpt" required placeholder="enter your last name"><br>
+                <input type="text" name="country" id="country" class="inpt" required
+                    placeholder="enter your country name"><br>
+                <select name="gender" id="gender" value="MALE" class="inpt">
+                    <option name="gender" value="Male">Male</option>
+                    <option name="gender" value="Female">Female</option>
+                </select><br>
+
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    contact & security information
+                </legend>
+                <input id="phone" type="tel" class="inpt"
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                    placeholder="enter your phone number" required><br>
+                <input id="email" type="email" class="inpt" pattern="(?=.*[a-zA-Z])[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                    placeholder="enter your email" required><br>
+                <input type="password" id="password" class="inpt"
+                    pattern="[A-Z](?=.*[0-9])(?!.]\s)(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*\u0621-\u064A]{7})" required
+                     placeholder="enter your password"><br>
+                <ul type="none" style="font-size:1.4rem ; padding: 2rem;">
+                    <li>password must be 8 character</li>
+                    <li>at least 1 uppercase , 1 lowercase ,<br> 1 digit and 1 special (!@#$%^&*?)</li>
+                    <li>password must start with uppercase character</li>
+                    
+                </ul>
+
+            </fieldset>
+            <footer class="f-form">
+                <input type="submit" class="btn" alt="welcome to your second home !">
+            </footer>
+
+
+        </form>
+    </section>
+    <footer>
+        <div class="footer-section">
+            <p> copyright &COPY; 2022 Fooods . All Rights Reserved </p>
+            <div class="socials">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

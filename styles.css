@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+nav .logo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+nav .logo .icon {
+  height: 7vh;
+  padding: 0.75rem;
+}
+nav .logo i {
+  height: 7vh;
+  padding: 0.75rem;
+}
+nav .bars-menu {
+  display: none;
+}
+
+nav .logo h4 {
+  font-family: "Lalezar", cursive;
+}
+
+nav .nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-items .nav-item {
+  padding: 0 1rem;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: #de0606;
+  font-size: 1.4rem;
+}
+
+nav .nav-link:hover {
+  color: #ef710a;
+}
+
+/* Heor styling */
+.hero {
+ background-color: rgb(246, 235, 221);
+ text-align: center;
+}
+
+.hero-section {
+  max-width: 1366px;
+  height: 90vh;
+  display: block;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+
+.hero-section .content h4 {
+  color: #de0606;
+ 
+  font-size: 1.6rem;
+ margin-top: 5rem;
+ margin-bottom: 5rem;
+}
+.h-form{
+  color: #de0606;
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.hero-section .content h1 {
+  
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+}
+
+
+.hero-section .content {
+  align-items: center;
+  margin-bottom: 5rem;
+
+}
+
+
+.btn {
+  font-size: 1.6rem;
+  width: 10rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #de0606;
+  color: rgb(255, 255, 255);
+  align-self: center;
+ 
+
+}
+
+.btn:hover {
+  background-color: #f32222;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.inpt{
+  font-size: 1.6rem;
+
+  width: 23rem;
+  margin: 1.6rem;
+  border-radius: 0.5rem;
+  outline: none;
+border-top: 0px; 
+border-bottom: #de0606 2px solid;
+border-left: 0px;
+border-right: 0px;
+ padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+
+}
+
+legend {
+  color: #f32222;
+  font-size: 1.6rem;
+
+}
+fieldset{
+ margin-top: 4rem;
+ display: block;
+}
+/* Features section */
+section.features {
+  padding: 2rem 0;
+  background-color: #f8f7fc;
+}
+
+section.features .features-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-section h4 {
+  color: #de0606;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.features-section .qualities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-section .qualities .quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 17rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+}
+
+.features-section .qualities .quality:hover {
+  border: 2px solid #de0606;
+}
+
+.qualities .quality i {
+  font-size: 2rem;
+  color:#de0606;
+  margin-bottom: 1rem;
+}
+
+.qualities .quality h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  
+}
+
+.qualities .quality p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #4e547e;
+}
+
+/*  foods section */
+.newest-foods {
+  padding-top: 5rem;
+  background-color: antiquewhite;
+  width: 100%;
+  overflow:hidden;
+}
+
+.newest-foods .foods-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.foods-section h4 {
+  color: #de0606;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.foods-section .foods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+.foods .food {
+  margin: 1.6rem ;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food img {
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: 25rem;
+}
+.food h3 span {
+  font-size: 1.8rem;
+  color: rgb(19, 215, 46);
+}
+.food img {
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: 25rem;
+}
+
+.food img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.food h3 {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-top: #de0606 2px solid;
+  border-bottom: #de0606 2px solid;
+}
+
+.foods-section button {
+  width: 15rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+/*------------chef section--------- */
+.newest-chefs {
+  padding-top: 5rem;
+  background-color: antiquewhite;
+  overflow:hidden;
+}
+
+.newest-chefs .chefs-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chefs-section h4 {
+  color: #de0606;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.chefs-section .chefs {
+  display: none;
+}
+.t-chef{
+  align-self: center;
+}
+
+.t-chef td{
+  border: #de0606 2px solid;
+  width: 75%;
+  padding: 3rem ;
+  text-align: center;
+
+}
+.t-chef li {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.t-chef a {
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: #de0606;
+}
+
+
+
+.chefs-section button {
+  width: 15rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+/*-----------restaurant------------*/
+.restaurants-section{
+  background-color: antiquewhite;
+  text-decoration: none;
+  align-items: center;
+}
+.restaurants-section h1{
+  text-align: center;
+  color: #de0606;
+  font-size: 2.6rem;
+  padding-top: 2rem;
+  
+  
+}
+.restaurants-section .restaurants{
+  display: grid;
+  margin: auto;
+  padding: 10rem 10rem ;
+  align-items: center;
+}
+.restaurants .restaurant{
+  text-align: center;
+  padding: auto;
+  margin: 2rem ;
+ 
+  margin-bottom: 2rem;
+  height: auto;
+}
+.restaurant h3{
+  font-size: 2rem;
+  color: brown;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.restaurant p{
+  font-size: 1.5rem;
+}
+/*---------- Footer---------------- */
+footer {
+  background-color: #f8f7fc;
+  height: 15vh;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem;
+}
+.footer-section .socials i {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  color: #de0606;
+}
+
+.footer-section .socials i:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%;
+  }
+  
+
+  .foods-section .foods {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .chefs-section .chefs {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .restaurants-section .restaurants{
+    
+    grid-template-columns:1fr 1fr 1fr ;
+  }
+
+}
+
+@media (max-width: 1175px) {
+  * {
+    font-size: 80%;
+  }
+ 
+  .foods-section .foods {
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .chefs-section .chefs {
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+  .restaurants-section .restaurants{
+    
+    grid-template-columns:1fr 1fr ;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+
+  
+  .hero-section {
+    align-items: center;
+    padding: 2rem 0rem;
+    width: 50%;
+    
+  }
+  .hero-section .content h4 {
+    color: #de0606;
+   
+    font-size: 1.6rem;
+    margin-top: 19rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero .content {
+    margin-top: 2rem;
+  }
+  .features-section .qualities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.features .features-section {
+    align-items: center;
+  }
+  .foods-section h4 {
+    align-self: center;
+  }
+  .chefs-section h4 {
+    align-self: center;
+  }
+
+}
+
+
+
+@media (max-width: 660px) {
+  .hero-section .content h1 {
+    font-size: 2rem;
+  }
+  .foods-section {
+    align-items: center;
+  }
+  
+  .foods-section .foods {
+      grid-template-columns: 1fr ;
+  }
+  .chefs-section {
+    align-items: center;
+  }
+  .chefs-section .tchef{
+    display: none;
+}
+  .chefs-section .chefs {
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: flex-start;
+  }
+  .chefs .chef {
+    margin: 1.8rem ;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chef img {
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 25rem;
+  }
+  h3 span {
+    font-size: 1.8rem;
+    color: rgb(108, 50, 36);
+  }
+  .chef img {
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 25rem;
+  }
+  
+  .chef img:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  .chef h3 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-top: #de0606 2px solid;
+    border-bottom: #de0606 2px solid;
+  }
+  
+
+ 
+
+  .hero img {
+    width: 80%;
+    height: auto;
+  }
+  nav .bars-menu {
+    display: block;
+    font-size: 3rem;
+  }
+  nav .nav-items {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #de0606;
+    padding: 2rem 0;
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0;
+  }
+  nav .nav-items .nav-item a {
+    color: white;
+  }
+  nav .nav-items.active {
+    display: flex;
+  }
+  .restaurants-section .restaurants{
+    
+    grid-template-columns:1fr  ;
+  }
+}
+
+
+@media (max-width: 504px) {
+
+ 
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: hwb(0 100% 0%);
+    width: 100%;
+  }
+  nav .bars-menu {
+    display: block;
+    font-size: 3rem;
+  }
+  nav .nav-items {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #de0606;
+    padding: 2rem 0;
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0;
+  }
+  nav .nav-items .nav-item a {
+    color: white;
+  }
+  nav .nav-items.active {
+    display: flex;
+  }
+  .hero img {
+    width: 80%;
+    height: auto;
+  }
+}
