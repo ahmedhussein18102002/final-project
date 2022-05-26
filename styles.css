@@ -359,26 +359,26 @@ section.features .features-section {
 .restaurants-section .restaurants{
   display: grid;
   margin: auto;
-  padding: 10rem 10rem ;
+  padding: auto ;
   align-items: center;
 }
 .restaurants .restaurant{
   text-align: center;
-  padding: auto;
-  margin: 2rem ;
+  padding: 2rem;
+  margin: 5rem ;
  
-  margin-bottom: 2rem;
+ 
   height: auto;
 }
 .restaurant h3{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: brown;
   margin: auto;
   text-align: center;
   margin-bottom: 1.6rem;
 }
 .restaurant p{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 /*---------- Footer---------------- */
 footer {
@@ -589,6 +589,17 @@ footer {
   .restaurants-section .restaurants{
     
     grid-template-columns:1fr  ;
+     align-items: center;
+  }
+  .restaurants .restaurant{
+   
+    margin: 2rem 0.8rem;
+    padding: 1px;
+    align-self: center;
+    
+  }
+  .restaurant p{
+text-align: left;
   }
 }
 
