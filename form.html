@@ -79,12 +79,10 @@
                     contact & security information
                 </legend>
                 <input id="phone" type="tel" class="inpt"
-                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
                     placeholder="enter your phone number" required><br>
-                <input id="email" type="email" class="inpt" pattern="(?=.*[a-zA-Z])[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                <input id="email" type="email" class="inpt" 
                     placeholder="enter your email" required><br>
-                <input type="password" id="password" class="inpt"
-                    pattern="[A-Z](?=.*[0-9])(?!.]\s)(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&*\u0621-\u064A]{7})" required
+                <input type="password" id="password" class="inpt" required
                      placeholder="enter your password"><br>
                 <ul type="none" style="font-size:1.4rem ; padding: 2rem;">
                     <li>password must be 8 character</li>
